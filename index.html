@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="app.js" type="module"></script>
+    <title>Decision Tree Inleveropdracht</title>
+</head>
+
+<body>
+    <div><h3>Heart attack predicter!</h3></div>
+    <div id="view"></div><br/>
+    <div id="accuracy">Accuracy : -</div><br/>
+    <div id="scatterplot"><canvas id="myChart" width="300" height="200"></canvas></div><br/>
+
+    <div id="form">
+    <form action="" method="post">
+        <div>
+            <label for="Age">What is your age?</label><br/>
+            <input type="text" id="Age" name="Age">
+        </div><br/>
+
+        <div>
+            <label for="Sex">What is your biological sex?</label><br/>
+            <input type="text" id="Sex" name="Sex">
+        </div><br/>
+
+        <div>
+            <label for="trestbps">What is your blood pressure when you're resting?</label><br/>
+            <input type="text" id="trestbps" name="trestbps">
+        </div><br/>
+
+        <div>
+            <label for="fbs">What is the value of your blood sugar when you're fasting?</label><br/>
+            <input type="text" id="fbs" name="fbs">
+        </div><br/>
+
+        <div>
+            <label for="exang">Have you had exercise induced angina before? (pain in the arteries)</label><br/>
+            <input type="text" id="exang" name="exang">
+        </div><br/>
+
+        <div>
+            <label for="ca">Do you have any major vessels colored with flourosopy? (if not use 0, maximum of 3 major vessels)</label><br/>
+            <input type="text" id="ca" name="ca">
+        </div><br/>
+
+        <div>
+            <label for="thal">Do you have any defects</label><br/>
+            <select id="thal" name="thal">
+                <option value="0">Normal</option>
+                <option value="1">Fixed defect</option>
+                <option value="2">Reversable defect</option>
+                </select>
+        </div><br/>
+        
+        <div>
+        <input type="submit" name="submit" value="Calculate">
+        </div>
+        
+        </form>
+    </div>
+
+</body>
+</html>
