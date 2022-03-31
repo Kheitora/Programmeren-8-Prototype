@@ -1,4 +1,4 @@
-import { DecisionTree } from "./libraries/decisiontree.js"
+import { DecisionTree } from "https://github.com/Kheitora/Programmeren-8-Prototype/blob/main/libraries/decisiontree.js"
 import { VegaTree } from "./libraries/vegatree.js"
 import { createChart } from "/scatterplot.js"
 
