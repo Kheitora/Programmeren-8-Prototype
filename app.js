@@ -1,5 +1,5 @@
 import { DecisionTree } from "https://github.com/Kheitora/Programmeren-8-Prototype/blob/main/libraries/decisiontree.js"
-import { VegaTree } from "./libraries/vegatree.js"
+import { VegaTree } from "https://github.com/Kheitora/Programmeren-8-Prototype/blob/main/libraries/vegatree.js"
 import { createChart } from "/scatterplot.js"
 
 
