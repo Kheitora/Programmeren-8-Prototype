@@ -6,7 +6,7 @@ import { createChart } from "/scatterplot.js"
 //
 // DATA
 //
-const csvFile = "Data/Heart_Disease_Prediction.csv"
+const csvFile = "https://github.com/Kheitora/Programmeren-8-Prototype/blob/main/Data/Heart_Disease_Prediction.csv"
 const trainingLabel = "Heart_Disease"  
 const ignored = ["Chest_pain_type", "BP", "Cholesterol", "FBS_over_120", "EKG_results", "Slope_of_ST"]
 let decisionTree
